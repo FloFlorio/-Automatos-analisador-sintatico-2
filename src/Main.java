@@ -13,7 +13,7 @@ public class Main {
 
         if (isValid) {
             System.out.println("A expressão é válida.");
-            System.out.println("Árvore sintática:");
+            System.out.println("Árvore:");
             System.out.println(parser.getRoot().toString());
         } else {
             System.out.println("A expressão é inválida.");
