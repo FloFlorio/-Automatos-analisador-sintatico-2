@@ -24,6 +24,11 @@ public class Parser {
         Node node = new Node("S"); // Cria um novo nó para "S"
         parent.setChildren(node);
 
+        // Verifica se o token atual é '+' ou '-'
+        if (current != null && (current.match("+") || current.match("-"))) {
+            node.setChildren(new Node(current.getData())); // Adiciona o sinal como um filho
+            consume();
+        }
         if (parseT(node)) {
             return parseK(node);
         }
