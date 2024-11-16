@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String expression = "(3 + 5) * (10 - 2)";
+        String expression = ""; // Escreva aqui a expressão entre aspas
         List<Token> tokens = Tokenizer.tokenize(expression);
 
         Tokenizer tokenizer = new Tokenizer(tokens);
